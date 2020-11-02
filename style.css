@@ -30,6 +30,7 @@
     01. General
 *************************/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&display=swap');
 body {
     /*color: #666666;*/
     color: #0b4065;
@@ -62,14 +63,14 @@ a:focus,
     outline: none;
 }
 a:focus,
-a:hover {
-    text-decoration: none;
-	color: #4FC2C7;
+a:hover, a:visited {
+    text-decoration: none;	
 }
 a,
 button,
 input {
     outline: medium none;
+    
 }
 .uppercase { 
     text-transform: uppercase
@@ -82,8 +83,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'Raleway', sans-serif;
+h6 {    
     margin: 0px;
     color: #1f223e;
 	font-weight: 700
@@ -118,7 +118,7 @@ ul {
     margin: 0px;
     padding: 0px;
 }
-li { list-style: none }
+li { list-style: circle }
 p {margin-bottom: 15px; 
     line-height: 24px;}
 label {
@@ -126,22 +126,22 @@ label {
     font-weight: 400;
 }
 *::-moz-selection {
-    background: #4fc1f0;
+    background: #0b4065;
     color: #fff;
     text-shadow: none;
 }
 ::-moz-selection {
-    background: #4fc1f0;
+    background: #0b4065;
     color: #fff;
     text-shadow: none;
 }
 ::selection {
-    background: #4fc1f0;
+    background: #0b4065;
     color: #fff;
     text-shadow: none;
 }
 span.tooltip-content {
-    color: #00a9da;
+    color: #0b4065;
     cursor: help;
     font-weight: 600;
 }
@@ -1044,6 +1044,12 @@ textarea {
     width: 100%;
     font-size: 14px;
 }
+.telInmenu
+{
+ /* font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+ font-size: 32px;
+ margin-right: 20px; */
+}
 textarea:focus {
     background: transparent;
     outline: none;
@@ -1051,6 +1057,19 @@ textarea:focus {
 ::-moz-placeholder {
     color: #444;
     font-size: 13px;
+}
+/*feedback buttons*/
+.feed_button_center
+{
+ text-align: center;
+}
+
+.feed_button
+{
+    position: fixed !important;
+    right: 20px;
+    top: 140px;
+    z-index: 1;
 }
 .input-group.divcenter.input-group .form-control { padding-left: 0px }
 /*************************
@@ -1254,6 +1273,8 @@ textarea:focus {
     top: 0;
     width: 100%;
     height: auto;
+    background: #ffffff;
+    box-shadow: 0 0px 3px rgba(50, 50, 50, 0.4);
 }
 .header-logo{
     padding: 5px;
@@ -1268,7 +1289,7 @@ textarea:focus {
 .logo {
     width: 119px;
     /* text-align: right; */
-    margin-top: 20px;
+    margin-top: 0px;
     background: #FFF;
     padding: 10px;
     border-radius: 15px;
@@ -1277,29 +1298,31 @@ textarea:focus {
     
  }
 .sticky .logo {
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
-.main-menu{margin-top: 20px;}
+.main-menu{margin-top: 25px;}
 .main-menu ul{}
 .main-menu ul li {
     display: inline-block;
     margin-left: 30px;
-    padding: 32px 0;
+    padding: 0 0;
     position: relative;
 }
-.sticky .main-menu ul li{padding: 18px 0}
+.sticky .main-menu ul li{padding: 0 0}
 .sticky .menu-toggle{ margin-top: 22px}
 .main-menu ul li a {
-    color: #fff;
-    font-family: "Raleway",sans-serif;
-    font-size: 13px;
+    /* color: #fff; */
+    /*font-family: "Raleway",sans-serif;*/
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
     font-weight: 600;
     position: relative;
     text-transform: uppercase;
+    color: #0b4065;
 }
 .main-menu ul li a::before {
-    background: #fff none repeat scroll 0 0;
+    background: #0b4065 none repeat scroll 0 0;
     bottom: -8px;
     content: "";
     height: 2px;
@@ -1371,14 +1394,14 @@ textarea:focus {
   padding: 0;
 }
 .mean-container a.meanmenu-reveal {
-  border: 1px solid #fff;
+  border: 1px solid #000;
   color: #fff;
   margin-top: -35px;
   padding: 4px 5px;
   position: absolute;
 }
 .mean-container a.meanmenu-reveal span {
-  background-color: #fff;
+  background-color: #000;
 }
 .mean-container .mean-nav {
   margin-top: 15px;
@@ -1388,17 +1411,35 @@ textarea:focus {
  * Adding them is left as an exercise for the reader.
  */
 
+/*Maks_classes*/
+/*About cention*/
+.content_middle
+{
+    text-indent: 30px;
+    padding-top:15px;
+    text-align: justify;
+}
+.contentimg{
+	padding:0 10px 0 10px;	
+}
+.google-map-area
+{
+    text-align: center;
+    /* background: url('images/slider/1.jpg'); */
+}
+
 /* stiky */
 .header-sticky.sticky {
     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-    background: rgba(0, 0, 0, 0.8);
+    /* background: rgba(0, 0, 0, 0.8); */
+    background: #ffffff;
     left: 0;
-    padding: 10px 0;
+    padding-top: 0px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999999;
-    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+    box-shadow: 0 1px 15px rgba(50, 50, 50, 0.5);
 }
 
 /* intelligent-header */
@@ -1459,7 +1500,7 @@ textarea:focus {
 
 /* Main Menu */
 .main-menu {
-  padding: 0;
+  padding-top: 15px;
 }
 .menu-style-toggle{}
 .menu-style-toggle nav {
@@ -1500,6 +1541,37 @@ textarea:focus {
 	padding: 0;
 	position: relative;
 }
+.watsLogo
+{
+    width: 40px;
+    background: url(images/social/insta2.png);    
+    display: block;
+    z-index: 99;
+    position: relative;
+}
+
+.price-blog
+{    
+   margin-top: 5px; 
+   border: 1px dotted #0b4065 ;
+}
+.price-img
+{
+    width: 133px;
+    height: 135px;
+    vertical-align: middle;    
+    margin: 10px auto;
+}
+
+.price-info
+{   
+    /* background: rgba(0, 0, 0, 0.8); */
+} 
+.pattern
+{
+    background: url(images/pattern.png) repeat; 
+}
+
 .owl-item{width: 34%}
 #slider-container .owl-wrapper-outer,
 #slider-container .owl-wrapper,
@@ -1534,7 +1606,7 @@ textarea:focus {
     background-size: cover;
 }
 .height-100vh {
-    height: 500px;
+    height: 600px;
 }
 .single-slide > a {
 	display: block;
@@ -1542,10 +1614,10 @@ textarea:focus {
 }
 .single-slide img {
 	width: 100%;
-	z-index: 1;
+	z-index: 10;
 }
 .corporate .single-slide img {
-	height:500px;
+	height:100%;
 }
 .dis-table{
 	display: table;
@@ -1562,11 +1634,12 @@ textarea:focus {
 	position: relative;
 	z-index: 20;
     margin-left: 6.9%;
-    width: 40%;	
+    width: 40%;    
 }
 .slide-content h1, .home-banner-content h1 {
 	font-size: 72px;
-	line-height: 72px;
+    line-height: 72px;    
+    margin-bottom: 50px;
 	position:relative;
     font-weight: 700;
     color: #fff;
@@ -1575,12 +1648,25 @@ textarea:focus {
 .slide-content h3 {
 	font-size: 30px;
 	line-height: 30px;
-	padding-top: 28px;
+	margin-top: 50px;
 	margin-bottom: 30px;
 	position:relative;
     font-weight: 400;
     color: #fff;
     z-index: 99;
+}
+.slide-content h5 {
+	font-size: 24px;
+	line-height: 30px;
+	padding-top: 18px;	
+	position:relative;
+    font-weight: 700;
+    color: #fff;
+    z-index: 99;
+}
+.slide-content a, a:hover, a:visited, a:focus
+{
+    color: #ffffff;
 }
 .btn {
     color: #111111;
@@ -1625,14 +1711,16 @@ textarea:focus {
     margin-right: 12px;
     width: 36px;
     z-index: 999;
+    display: none;
 }
 .owl-carousel .owl-controls .owl-dots .owl-dot.active {
     background-color: #ffffff;
     border: 1px solid #ffffff;
+    display: none;
 }
 #slider-container .owl-controls {
     position: absolute;
-    bottom: 90px;
+    bottom: 30px;
     text-align: center;
     left: 0;
     right: 0;
@@ -1646,6 +1734,7 @@ textarea:focus {
     text-transform: uppercase;
     margin-bottom: 32px;
 }
+
 .about-left p{margin-bottom: 25px}
 .about-area .btn {
   border: 1px solid #666;
@@ -1762,16 +1851,17 @@ textarea:focus {
     text-transform: uppercase;
     margin-bottom: 7px;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
+    text-align: center;
 }
 .service-content h3::after {
-    background: #222222 none repeat scroll 0 0;
+    /* background: #222222 none repeat scroll 0 0;
     content: "";
     height: 2px;
     position: absolute;
     right: -50px;
     top: 15px;
-    width: 40px;
+    width: 40px; */
 }
 .service-content p {
     margin-bottom: 0px;
@@ -1916,9 +2006,15 @@ textarea:focus {
     background-position: center center;
     position: relative;
 }
+.section-titlewhite h2{
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
 .team-owl .col-md-3{width: 100%}
 .testimonial-wrapper{padding: 0 45px;}
-.testimonial-area:after{
+.testimonial-area::before{
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
     left: 0;
@@ -1930,12 +2026,10 @@ textarea:focus {
 }
 .testimonial-client p{color: #fff; margin-top: 2px}
 .client-img{
-    margin-right: 30px;
+    margin-left:0 30px !important;
 }
-.client-img img{
-    border-radius: 50%;
-    height: 90px;
-    width: 90px;
+.client-img img{        
+    width: 250px !important;
     border: 1px solid #fff;
 }
 .client-info{margin: 22px 0; display: inline-block}
@@ -1957,10 +2051,10 @@ textarea:focus {
 .single-member{
     position: relative; 
     overflow: hidden; 
-    line-height: 0;
+    line-height: 0;    
 }
 .member-hover{
-    background: rgba(0, 0, 0, 0.8);
+    /* background: rgba(0, 0, 0, 0.8); */
     position: absolute;
     bottom: -190px;
     left: 0;
@@ -1992,22 +2086,18 @@ textarea:focus {
     text-transform: capitalize;
     margin-bottom: 12px;
 }
-.member-icons ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.member-icons ul li{
-    display: inline-block;
-    margin: 0 7px;
-}
-.member-icons ul li a{
-    display: block;
-    font-size: 18px;
-    color: #fff;
-}
-.member-icons ul li:hover a{
-    color: #ddd;
+
+.testimonial-client ul li
+{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 20px 10px !important;
+    list-style: circle !important;
+    list-style-position: inside !important;
+    list-style-image: inherit !important;
+    text-align: justify;
 }
 /*----------------------------------------*/
 /*  09. Blog Area
@@ -2104,9 +2194,13 @@ textarea:focus {
     margin-bottom: 20px;
 }
 .widget-info p{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
+}
+.widget-info a, a:hover, a:visited, a:focus
+{
+    color: #ffffff;
 }
 .main-footer{
     border-bottom: 1px solid #fff;

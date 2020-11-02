@@ -191,12 +191,12 @@ Design and Developed by: Devitems
  /*-------------------------------------------
     06. ScrollUp jquery
 --------------------------------------------- */
-    $.scrollUp({
-        scrollText: '<i class="fa fa-angle-up"></i>',
-        easingType: 'linear',
-        scrollSpeed: 900,
-        animation: 'fade'
-    }); 
+    // $.scrollUp({
+        // scrollText: '<i class="fa fa-angle-up"></i>',
+        // easingType: 'linear',
+        // scrollSpeed: 900,
+        // animation: 'fade'
+    // }); 
         
 /*--------------------------------
 	07. One Page Nav
@@ -222,21 +222,21 @@ Design and Developed by: Devitems
     /*--
     map 
     -----------------------------------*/
-    function initialize() {
-        var mapOptions = {
-            zoom: 15,
-            scrollwheel: false,
-            center: new google.maps.LatLng(23.763494, 90.432226)
-        };
-        var map = new google.maps.Map(document.getElementById('googleMap'),
-        mapOptions);
-        var marker = new google.maps.Marker({
-            position: map.getCenter(),
-            animation:google.maps.Animation.BOUNCE,
-            icon: 'images/map-marker.png',
-            map: map
-        });
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);	
+    // function initialize() {
+        // var mapOptions = {
+            // zoom: 15,
+            // scrollwheel: false,
+            // center: new google.maps.LatLng(23.763494, 90.432226)
+        // };
+        // var map = new google.maps.Map(document.getElementById('googleMap'),
+        // mapOptions);
+        // var marker = new google.maps.Marker({
+            // position: map.getCenter(),
+            // animation:google.maps.Animation.BOUNCE,
+            // icon: 'images/map-marker.png',
+            // map: map
+        // });
+    // }
+    // google.maps.event.addDomListener(window, 'load', initialize);	
     
 })(jQuery);
